@@ -2,9 +2,6 @@ import java.util.ArrayList;
 
 public class Module {
 
-    //A module class, which should contain information such as module name, id (e.g.
-    //CT417), list of students, courses it is associated with)
-
     private String moduleName;
     private int moduleID;
     ArrayList<Student> students=new ArrayList<Student>();

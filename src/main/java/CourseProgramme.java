@@ -1,21 +1,16 @@
-import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
 import java.util.ArrayList;
 
 
 public class CourseProgramme {
 
-    // A course programme class containing course name (CS & IT or ECE, etc.), list of
-    //modules, list of students that are enrolled, academic start date and end date.
-    //Start and end dates should use Joda Time classes (i.e. DateTime), which must be
-    //added as a project dependency
-
     private String courseName;
     ArrayList<Module> courseModules=new ArrayList<Module>();
     ArrayList<Student> enrolledStudents=new ArrayList<Student>();
-    DateTime startDate = new DateTime();
-    DateTime endDate = new DateTime();
+    LocalDate startDate = new LocalDate();
+    LocalDate endDate = new LocalDate();
 
-    public CourseProgramme(String courseName, ArrayList<Module> courseModules, ArrayList<Student> enrolledStudents, DateTime startDate, DateTime endDate) {
+    public CourseProgramme(String courseName, ArrayList<Module> courseModules, ArrayList<Student> enrolledStudents, LocalDate startDate, LocalDate endDate) {
         this.courseName = courseName;
         this.courseModules = courseModules;
         this.enrolledStudents = enrolledStudents;
@@ -48,19 +43,19 @@ public class CourseProgramme {
         this.enrolledStudents = enrolledStudents;
     }
 
-    public DateTime getStartDate() {
+    public LocalDate getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(DateTime startDate) {
+    public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
     }
 
-    public DateTime getEndDate() {
+    public LocalDate getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(DateTime endDate) {
+    public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
     }
 }
