@@ -11,13 +11,15 @@ public class Student {
     ArrayList<CourseProgramme> courses=new ArrayList<CourseProgramme>();
     ArrayList<Module> modules=new ArrayList<Module>();
 
-    public Student(String name, int age, LocalDate dob, int id) {
-        this.fullName = name;
+    public Student(String fullName, int age, LocalDate dob, int id, ArrayList<CourseProgramme> courses, ArrayList<Module> modules) {
+        this.fullName = fullName;
         this.age = age;
         this.dob = dob;
         this.id = id;
+        this.username = username;
+        this.courses = courses;
+        this.modules = modules;
     }
-
 
     //Accessors and Mutators
     public String getFullName() {
