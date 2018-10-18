@@ -1,3 +1,4 @@
 language: java
 
-jdk: 11(java version "11")
+jdk:
+- oraclejdk11
